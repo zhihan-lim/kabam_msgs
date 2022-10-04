@@ -1,0 +1,21 @@
+#goal definition
+string mission_name
+string mission_id
+string mission_instance_id
+Task[] task_list
+int8 loop_count
+
+---
+#result definition
+string status_desc
+---
+#feedback
+string mission_name
+string mission_id
+string mission_instance_id
+TaskStatus mission_status
+TaskStatus[] task_status_list
+int8 complete_pct
+int16 time_elapsed_sec
+int8 loop_count_req
+int8 loop_count_done
