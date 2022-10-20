@@ -1,0 +1,4 @@
+bool mapping_type
+string map_filename
+---
+bool success
