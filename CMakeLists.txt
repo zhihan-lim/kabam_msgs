@@ -21,6 +21,8 @@ add_message_files(
   Task.msg
   Mission.msg
   MissionList.msg
+  ChargerState.msg
+  ScoutStatus.msg
 )
 
 
