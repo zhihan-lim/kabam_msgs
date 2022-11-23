@@ -32,6 +32,9 @@ add_service_files(
   GetMissionList.srv
   GetScheduleList.srv
   StartMission.srv
+  GetLastWpReached.srv
+  ParamTrigger.srv
+  StartMapping.srv
 )
 
 # Generate actions in the 'action' folder
