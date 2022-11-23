@@ -21,6 +21,8 @@ add_message_files(
   Task.msg
   Mission.msg
   MissionList.msg
+  ChargerState.msg
+  ScoutStatus.msg
 )
 
 
@@ -30,6 +32,9 @@ add_service_files(
   GetMissionList.srv
   GetScheduleList.srv
   StartMission.srv
+  GetLastWpReached.srv
+  ParamTrigger.srv
+  StartMapping.srv
 )
 
 # Generate actions in the 'action' folder
