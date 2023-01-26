@@ -30,6 +30,7 @@ add_message_files(
 add_service_files(
   FILES
   GetMissionList.srv
+  GetMissionDetails.srv
   GetScheduleList.srv
   StartMission.srv
   GetLastWpReached.srv
