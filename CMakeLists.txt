@@ -23,6 +23,7 @@ add_message_files(
   MissionList.msg
   ChargerState.msg
   ScoutStatus.msg
+  MissionIdentifier.msg
 )
 
 
