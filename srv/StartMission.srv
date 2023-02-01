@@ -1,4 +1,4 @@
 string mission_requested
-uint8 loop_count
+int8 loop_count
 ---
 bool response
