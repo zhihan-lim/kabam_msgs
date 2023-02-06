@@ -1,4 +1,4 @@
-string mission_name
+string mission_requested
 int8 loop_count
 ---
 bool response
