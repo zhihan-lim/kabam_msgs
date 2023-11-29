@@ -2,6 +2,4 @@ int16 mcu_state
 bool bumper_triggered
 int16 scout_state
 int16 scout_control_mode
-bool left_switch_state
-bool right_switch_state
-bool rear_switch_state
+bool switch_state
