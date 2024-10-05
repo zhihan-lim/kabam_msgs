@@ -1,3 +1,3 @@
 std_msgs/Header header
 actionlib_msgs/GoalID goal_id
-move_base_msgs/MoveBaseGoal goal
+MoveBaseGoal goal

@@ -1,3 +1,3 @@
-move_base_msgs/MoveBaseActionGoal action_goal
-move_base_msgs/MoveBaseActionResult action_result
-move_base_msgs/MoveBaseActionFeedback action_feedback
+MoveBaseActionGoal action_goal
+MoveBaseActionResult action_result
+MoveBaseActionFeedback action_feedback
