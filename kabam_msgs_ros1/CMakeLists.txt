@@ -21,6 +21,13 @@ add_message_files(
     Mission.msg
     MissionIdentifier.msg
     MissionList.msg
+    MoveBaseAction.msg
+    MoveBaseActionFeedback.msg
+    MoveBaseActionGoal.msg
+    MoveBaseActionResult.msg
+    MoveBaseFeedback.msg
+    MoveBaseGoal.msg
+    MoveBaseResult.msg
     ScoutStatus.msg
     Task.msg
     TaskParam.msg
@@ -47,6 +54,7 @@ add_action_files(
   FILES
     AutoDocking.action
     MissionControl.action
+    MoveBase.action
 )
 # Generate added messages and services with any dependencies listed here
 generate_messages(
