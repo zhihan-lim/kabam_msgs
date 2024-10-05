@@ -1,0 +1,5 @@
+int16 mcu_state
+bool bumper_triggered
+int16 scout_state
+int16 scout_control_mode
+bool switch_state

@@ -11,31 +11,32 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(actionlib_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(nav_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "action/AutoDocking.action"
+  "action/MissionControl.action"
+  "msg/ChargerState.msg"
+  "msg/Mission.msg"
+  "msg/MissionIdentifier.msg"
+  "msg/MissionList.msg"
+  "msg/ScoutStatus.msg"
   "msg/Task.msg"
   "msg/TaskParam.msg"
   "msg/TaskStatus.msg"
   "msg/Waypoint.msg"
   "msg/WaypointList.msg"
+  "srv/GetLastWpReached.srv"
+  "srv/GetMissionDetails.srv"
+  "srv/GetMissionList.srv"
+  "srv/GetScheduleList.srv"
   "srv/ParamTrigger.srv"
-  DEPENDENCIES nav_msgs std_msgs
+  "srv/StartMapping.srv"
+  "srv/StartMission.srv"
+  DEPENDENCIES actionlib_msgs geometry_msgs std_msgs
  )
-
-
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
 
 ament_package()
